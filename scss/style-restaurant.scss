@@ -172,10 +172,6 @@ h3 {
   }
 }
 
-$num-plat: 5;
-$anim-dur: 500ms;
-$anim-delay: $anim-dur / $num-plat;
-
 .plat {
   background-color: white;
   @extend %border;
@@ -192,7 +188,7 @@ $anim-delay: $anim-dur / $num-plat;
     &--#{$i} {
         animation-delay: $anim-delay * $i;
     }
-}
+  }
   &__valide {
     position: absolute; 
     right: 0px;
@@ -265,8 +261,7 @@ $anim-delay: $anim-dur / $num-plat;
   &:hover{
     & .plat__apparence{
       p{
-        padding-right: 150px;
-        
+        padding-right: 150px;  
       }
     }
     & .plat__prix{
