@@ -1,0 +1,475 @@
+.plat {
+  -webkit-box-shadow: 5px 5px 12px grey;
+          box-shadow: 5px 5px 12px grey;
+  border-radius: 30px;
+}
+
+.bouton__commande {
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background-color: initial;
+  background-image: linear-gradient(135deg, #FF79DA, #9356DC);
+  border-radius: 42px;
+  border-width: 0;
+  -webkit-box-shadow: rgba(57, 31, 91, 0.24) 0 2px 2px, rgba(179, 132, 201, 0.4) 0 8px 12px;
+          box-shadow: rgba(57, 31, 91, 0.24) 0 2px 2px, rgba(179, 132, 201, 0.4) 0 8px 12px;
+  color: #FFFFFF;
+  cursor: pointer;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  font-family: roboto,sans-serif;
+  font-size: 100%;
+  font-weight: 500;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  letter-spacing: .04em;
+  line-height: auto;
+  margin: 0;
+  width: 50%;
+  padding: 18px 18px;
+  text-align: center;
+}
+
+@media screen and (min-device-width: 780px) {
+  body {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 800px;
+    padding: 0px;
+    font-size: large;
+    font-family: Roboto,sans-serif;
+  }
+  body .image {
+    width: 100%;
+  }
+  body .titre .fa-solid {
+    font-size: 220%;
+  }
+  body h2 {
+    font-size: 150%;
+  }
+  body .plat {
+    height: 100px;
+  }
+  body .plat p {
+    margin-top: 0px;
+    margin-bottom: 0;
+    width: 500px;
+    height: 40px;
+  }
+  body .plat__info {
+    margin-top: 20px;
+    height: 70px;
+  }
+}
+
+@media screen and (max-device-width: 780px) {
+  body {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 0px;
+    font-family: Roboto,sans-serif;
+    font-size: 250%;
+  }
+  body .image {
+    width: 100%;
+  }
+  body .plat {
+    height: 180px;
+  }
+  body .plat p {
+    height: 50px;
+    width: 700px;
+    margin-top: 10px;
+    margin-bottom: 25px;
+  }
+}
+
+.titre {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -o-object-fit: cover;
+     object-fit: cover;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  text-decoration: none;
+  color: black;
+}
+
+.titre .fa-arrow-left {
+  position: relative;
+  top: 15px;
+  right: 70px;
+  font-size: 120%;
+  color: black;
+}
+
+.titre .fa-arrow-left i:hover {
+  cursor: pointer;
+}
+
+.titre h1 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -o-object-fit: cover;
+     object-fit: cover;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin: 10px;
+}
+
+.titre h1 .logo {
+  width: 80%;
+  height: auto;
+}
+
+.image {
+  width: 100%;
+  height: auto;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+main {
+  background-color: #f6f6f6;
+  border-top-left-radius: 50px;
+  border-top-right-radius: 50px;
+  position: relative;
+  top: -50px;
+  width: 100%;
+  margin-bottom: 0;
+}
+
+main .section {
+  margin-top: 40px;
+}
+
+.restaurant {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+
+.restaurant h2 {
+  font-family: Shrikhand;
+  padding-left: 0px;
+  margin-top: 23px;
+}
+
+.restaurant i:hover {
+  cursor: pointer;
+}
+
+.restaurant .fa-heart {
+  position: absolute;
+  top: 0;
+  left: 80%;
+  margin-top: 33px;
+  font-size: 150%;
+}
+
+.restaurant .fa-solid {
+  z-index: -1;
+  -webkit-transition: opacity(0) 250ms;
+  transition: opacity(0) 250ms;
+  -webkit-transition-property: -webkit-transform;
+  transition-property: -webkit-transform;
+  transition-property: transform;
+  transition-property: transform, -webkit-transform;
+  cursor: pointer;
+  background: -webkit-linear-gradient(#9356DC, #FF79DA);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.restaurant i:hover + .fa-solid {
+  content: "";
+  position: absolute;
+  cursor: pointer;
+  opacity: 1;
+  z-index: 1;
+  -webkit-transition: opacity(1) 250ms;
+  transition: opacity(1) 250ms;
+}
+
+h3 {
+  font-weight: 400;
+  font-size: 110%;
+  margin-bottom: 30px;
+  margin-left: 20px;
+}
+
+h3 .souligne {
+  padding-bottom: 5px;
+  border-bottom: 3px solid #99E2D0;
+}
+
+.plat {
+  background-color: white;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 30px;
+  padding-left: 20px;
+  width: 90%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  position: relative;
+  z-index: 1;
+  -webkit-animation: apparition 1s ease;
+          animation: apparition 1s ease;
+}
+
+.plat--1 {
+  -webkit-animation-delay: 100ms;
+          animation-delay: 100ms;
+}
+
+.plat--2 {
+  -webkit-animation-delay: 200ms;
+          animation-delay: 200ms;
+}
+
+.plat--3 {
+  -webkit-animation-delay: 300ms;
+          animation-delay: 300ms;
+}
+
+.plat--4 {
+  -webkit-animation-delay: 400ms;
+          animation-delay: 400ms;
+}
+
+.plat--5 {
+  -webkit-animation-delay: 500ms;
+          animation-delay: 500ms;
+}
+
+.plat__valide {
+  position: absolute;
+  right: 0px;
+  width: 0px;
+  height: 100%;
+  background-color: #99E2D0;
+  -webkit-transition: -webkit-transform 400ms ease-in-out;
+  transition: -webkit-transform 400ms ease-in-out;
+  transition: transform 400ms ease-in-out;
+  transition: transform 400ms ease-in-out, -webkit-transform 400ms ease-in-out;
+  -webkit-transition-property: -webkit-transform;
+  transition-property: -webkit-transform;
+  transition-property: transform;
+  transition-property: transform, -webkit-transform;
+  -webkit-transform-origin: 100% 50%;
+          transform-origin: 100% 50%;
+  -webkit-transform: scaleX(0);
+          transform: scaleX(0);
+  text-align: center;
+  overflow: hidden;
+}
+
+.plat__valide span {
+  position: relative;
+  color: white;
+  top: 35%;
+  display: block;
+  -webkit-transform: translateX(100%);
+          transform: translateX(100%);
+  -webkit-transition: -webkit-transform 400ms ease-out 50ms;
+  transition: -webkit-transform 400ms ease-out 50ms;
+  transition: transform 400ms ease-out 50ms;
+  transition: transform 400ms ease-out 50ms, -webkit-transform 400ms ease-out 50ms;
+  -webkit-transform: rotate(-2turn);
+          transform: rotate(-2turn);
+}
+
+.plat__prix {
+  display: inline-block;
+  text-align: center;
+  margin-top: 0px;
+  padding: 0px;
+  padding-right: 0px;
+  margin-right: 3%;
+  -webkit-transition: -webkit-transform 400ms ease-in-out;
+  transition: -webkit-transform 400ms ease-in-out;
+  transition: transform 400ms ease-in-out;
+  transition: transform 400ms ease-in-out, -webkit-transform 400ms ease-in-out;
+  -webkit-transform: translateX(0%);
+          transform: translateX(0%);
+}
+
+.plat__nom {
+  font-weight: 700;
+  margin-bottom: 0;
+  margin-top: 0;
+  padding-bottom: 0;
+  overflow: ellipsis;
+}
+
+.plat__apparence {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  width: 95%;
+  margin: 0;
+  padding: 0;
+  padding-top: 10px;
+}
+
+.plat__apparence p {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  margin-bottom: 0;
+}
+
+.plat__info {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  height: 50px;
+  margin-top: 0px;
+  margin-bottom: 0;
+  width: 100%;
+}
+
+.plat:hover .plat__apparence p {
+  padding-right: 150px;
+}
+
+.plat:hover .plat__prix {
+  -webkit-transform: translateX(-140px);
+          transform: translateX(-140px);
+}
+
+.plat:hover {
+  cursor: pointer;
+}
+
+.plat:hover > .plat__valide {
+  -webkit-transform: scaleX(1);
+          transform: scaleX(1);
+  background-color: #99E2D0;
+  width: 20%;
+  border-top-right-radius: 20px;
+  border-bottom-right-radius: 20px;
+  margin: 0;
+  padding: 0;
+}
+
+.plat:hover > .plat__valide span {
+  -webkit-transform: translateX(0);
+          transform: translateX(0);
+  -webkit-transform: rotate(0turn);
+          transform: rotate(0turn);
+}
+
+@-webkit-keyframes apparition {
+  from {
+    opacity: 0;
+    -webkit-transform: translateY(50px);
+            transform: translateY(50px);
+  }
+  to {
+    opacity: 1;
+    -webkit-transform: translateY(0px);
+            transform: translateY(0px);
+  }
+}
+
+@keyframes apparition {
+  from {
+    opacity: 0;
+    -webkit-transform: translateY(50px);
+            transform: translateY(50px);
+  }
+  to {
+    opacity: 1;
+    -webkit-transform: translateY(0px);
+            transform: translateY(0px);
+  }
+}
+
+.bouton__commande {
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 40px;
+  margin-bottom: 40px;
+}
+
+footer {
+  background-color: black;
+  width: 100%;
+  height: 100%;
+  margin-top: 0%;
+  position: relative;
+  top: -50px;
+}
+
+footer ul {
+  list-style-type: none;
+}
+
+footer .logo {
+  font-family: Shrikhand;
+  color: white;
+}
+
+footer .colaboration {
+  color: white;
+}
+
+footer .info {
+  color: white;
+}
+
+footer a {
+  text-decoration: none;
+}
+/*# sourceMappingURL=style-restaurant.css.map */
