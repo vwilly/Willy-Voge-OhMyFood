@@ -119,8 +119,7 @@
     left : 0px;
     height : 100%;
     width : 100%;
-    cursor : wait;
-    animation: disparition 300ms 5000ms;
+    animation: disparition 300ms 3000ms;
     animation-fill-mode: forwards;
 }
 .spinner div {
@@ -165,7 +164,7 @@
       z-index: -999;
     }
   }
-  
+  //début de page//
 h1{
     display: flex;
     object-fit: cover;

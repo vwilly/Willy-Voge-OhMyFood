@@ -85,6 +85,13 @@
   text-align: center;
 }
 
+.gps-box .gps-button:hover {
+  -webkit-box-shadow: rgba(57, 31, 91, 0.24) 0 7px 7px, rgba(179, 132, 201, 0.4) 0 13px 20px;
+          box-shadow: rgba(57, 31, 91, 0.24) 0 7px 7px, rgba(179, 132, 201, 0.4) 0 13px 20px;
+  -webkit-filter: brightness(1.2);
+          filter: brightness(1.2);
+}
+
 @media screen and (min-device-width: 780px) {
   body {
     display: -webkit-box;
@@ -217,9 +224,8 @@
   left: 0px;
   height: 100%;
   width: 100%;
-  cursor: wait;
-  -webkit-animation: disparition 300ms 5000ms;
-          animation: disparition 300ms 5000ms;
+  -webkit-animation: disparition 300ms 3000ms;
+          animation: disparition 300ms 3000ms;
   -webkit-animation-fill-mode: forwards;
           animation-fill-mode: forwards;
 }
