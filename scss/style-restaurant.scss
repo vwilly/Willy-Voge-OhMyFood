@@ -254,10 +254,9 @@ h3 {
     margin-top: 0px;
     margin-bottom: 0;
     width: 100%;
-
   }
 
-
+//décalage prix + deformation pour le overflow//
   &:hover{
     & .plat__apparence{
       p{
@@ -268,6 +267,7 @@ h3 {
     transform: translateX(-140px);
     }
   }
+  //validation du menu + rotation icone//
   &:hover {
     cursor: pointer;
     & >.plat__valide {
@@ -284,10 +284,9 @@ h3 {
         }
       }
   }
-
 }
-
-@keyframes apparition {
+//animation apparition menu//
+@keyframes apparition { 
   from {
     opacity: 0;
     transform: translateY(50px); 
