@@ -10,7 +10,7 @@
           align-items: center;
   background-color: initial;
   background-image: linear-gradient(135deg, #FF79DA, #9356DC);
-  border-radius: 42px;
+  border-radius: 80px;
   border-width: 0;
   -webkit-box-shadow: rgba(57, 31, 91, 0.24) 0 2px 2px, rgba(179, 132, 201, 0.4) 0 8px 12px;
           box-shadow: rgba(57, 31, 91, 0.24) 0 2px 2px, rgba(179, 132, 201, 0.4) 0 8px 12px;
@@ -28,7 +28,6 @@
   letter-spacing: .04em;
   line-height: auto;
   margin: 0;
-  width: 50%;
   padding: 18px 18px;
   text-align: center;
 }
@@ -84,6 +83,10 @@
     margin-top: 20px;
     height: 70px;
   }
+  body .bouton__commande {
+    height: 60px;
+    width: 30%;
+  }
 }
 
 @media screen and (max-device-width: 780px) {
@@ -119,6 +122,10 @@
     width: 700px;
     margin-top: 10px;
     margin-bottom: 25px;
+  }
+  body .bouton__commande {
+    height: 120px;
+    width: 45%;
   }
 }
 
@@ -446,15 +453,15 @@ h3 .souligne {
 .bouton__commande {
   margin-left: auto;
   margin-right: auto;
-  margin-top: 40px;
-  margin-bottom: 40px;
+  margin-top: 80px;
+  margin-bottom: 80px;
 }
 
 footer {
   background-color: black;
   width: 100%;
   height: 100%;
-  margin-top: 0%;
+  margin-top: px;
   position: relative;
   top: -50px;
 }
