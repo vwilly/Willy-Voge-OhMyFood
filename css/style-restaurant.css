@@ -320,6 +320,7 @@ h3 .souligne {
 .plat__valide span {
   position: relative;
   color: white;
+  font-size: 140%;
   top: 35%;
   display: block;
   -webkit-transform: translateX(100%);
