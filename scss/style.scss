@@ -22,6 +22,10 @@
     .gps-box {
         height: 550px;
         width: 800px;
+        .gps-button {
+            width: 50%;
+            height: 12%;
+        }
     }
     .navigation{
         li{
@@ -109,6 +113,10 @@
     }
     .gps-box{
         height: 800px;
+        .gps-button {
+            width: 65%;
+            height: 17%;
+        }
     }
     .navigation {
         height: 800px;
@@ -273,8 +281,6 @@ h1{
     .gps-button{
         @extend %center-box;
         @extend %big-button;
-        width: 65%;
-        height: 17%;
     }
 } 
 

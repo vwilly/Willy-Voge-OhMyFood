@@ -109,6 +109,10 @@
     height: 550px;
     width: 800px;
   }
+  body .gps-box .gps-button {
+    width: 50%;
+    height: 12%;
+  }
   body .navigation li {
     height: 80px;
   }
@@ -204,6 +208,10 @@
   }
   body .gps-box {
     height: 800px;
+  }
+  body .gps-box .gps-button {
+    width: 65%;
+    height: 17%;
   }
   body .navigation {
     height: 800px;
@@ -418,11 +426,6 @@ h1 img {
 .gps-box .gps-message {
   height: 50%;
   text-align: center;
-}
-
-.gps-box .gps-button {
-  width: 65%;
-  height: 17%;
 }
 
 .navigation {
